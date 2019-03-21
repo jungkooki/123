@@ -9,18 +9,17 @@
 <body>
     <script>
     function bake(degree) {
-        var message
         if (degree >500) {
-            message="我不是核反应堆"
+            alert("我不是核反应堆")
         } else if (degree <100) {
-            message="我不是冰箱"
+            alert("我不是冰箱")
         } else {
-            message="开始正常工作"
+            alert("开始正常工作")
         }
-        return message
+        alert ("开始正常工作")
     }
     bake(150)
-    alert (bake(150)          )
+    alert (bake(150)  )
     </script>
 </body>
 </html>
