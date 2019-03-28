@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    window.onload=function() {
+   function makePhrases() {
+    var name =['陈泽宇','杨克琴','郭懿婷','陈欣楚','杨心怡','吴倩雯','龚佳怡','李可新','陆心怡',
+             '张璐','潘梦情','田金丰','葛梦蝶','刘祎婷','沈宇峰','王达','李一鸣','徐志豪','孙睿褀','徐杨',
+             '濮徐杰','陈卓豪','王昱','林超凡','孔易飞','王诚礼','杨凤旗','王韫韬','吴策','顾强','顾强','薛宇成',
+             '俞浩','陈李鹏','徐超','顾伟豪','王钦鹏','孙权','潘铖','朱铭杨','张程','杨吉']
+    var time =['早上7点15分', '午夜12点', '炎热的下午3点', '中午11点']
+    var place =['在食堂二楼一个角落里', '在宿舍门口', '在操场']
+    var ac =['吃饭', '上厕所', '和别人聊天']
+
+    //var rw1 = choose(name)
+    //var rw2 = choose(time)
+    //var rw3 = choose(place)
+    //var rw4 = choose(ac)
+
+    var phrase = choose(name) + " " + choose(time) + " " + choose(place) + " " + choose(ac);
+    alert(phrase);
+
+    function choose(array) {
+      return array[Math.floor(Math.random() * array.length)]
+    }
+    //choose(time)
+   }
+  makePhrases();
+  }
+  </script>
+</body>
+</html>
