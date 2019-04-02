@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  var highest=0, sum=0
+  var scores= [10,20,30,40,50,60,70,80,90,100,79,77,76,87,86,85,100,89,81,82,83,98,97,96,95,94,93,91,92,60,58,55,56,53,61,63,47,46,45,41,33]
+  for (var i = 0; i< scores.length; i++) {
+    if (scores[i] > highest) {
+      highest=scores[i]
+    }
+    sum=scores[i]
+  }
+  document.write ( "最大值是:" + highest + "最大值的数组是" + "。")
+  </script>
+</body>
+</html>
